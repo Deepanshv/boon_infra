@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface PropertyShowcaseProps {
   title: string;
@@ -8,6 +9,7 @@ interface PropertyShowcaseProps {
   features: string[];
   imagePath: string;
   reverse?: boolean;
+  projectId?: string;
 }
 
 const PropertyShowcase = ({
@@ -17,6 +19,7 @@ const PropertyShowcase = ({
   features,
   imagePath,
   reverse = false,
+  projectId = "premium-gardens",
 }: PropertyShowcaseProps) => {
   return (
     <section className="py-24 relative overflow-hidden">
@@ -58,13 +61,15 @@ const PropertyShowcase = ({
               ))}
             </ul>
 
-            <Button 
-              className="bg-luxury-gold hover:bg-luxury-gold-dark text-background group mt-8"
-              size="lg"
-            >
-              EXPLORE PROJECT
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <Link to={`/project/${projectId}`}>
+              <Button 
+                className="bg-luxury-gold hover:bg-luxury-gold-dark text-background group mt-8"
+                size="lg"
+              >
+                EXPLORE PROJECT
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

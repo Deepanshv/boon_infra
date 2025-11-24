@@ -93,6 +93,7 @@ const Index = () => {
           "Premium Italian marble flooring",
         ]}
         imagePath={property1}
+        projectId="premium-gardens"
       />
 
       <div className="h-px bg-border container mx-auto" />
@@ -109,6 +110,7 @@ const Index = () => {
           "Sustainable green building design",
         ]}
         imagePath={property2}
+        projectId="executive-estate"
         reverse
       />
 
@@ -126,6 +128,7 @@ const Index = () => {
           "Smart home automation systems",
         ]}
         imagePath={property3}
+        projectId="riverside-enclave"
       />
 
       <Footer />
