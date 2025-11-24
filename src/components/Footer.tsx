@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Twitter, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,10 +8,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-serif font-bold">
-              <span className="text-luxury-gold">LUXURY</span>
-              <span className="text-foreground"> ESTATES</span>
-            </h3>
+            <Link to="/">
+              <h3 className="text-2xl font-serif font-bold">
+                <span className="text-luxury-gold">LUXURY</span>
+                <span className="text-foreground"> ESTATES</span>
+              </h3>
+            </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Creating architectural masterpieces and luxury living spaces for over three decades.
             </p>
@@ -34,11 +37,16 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-3">
-              {["About Us", "Projects", "Testimonials", "Careers", "Media"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-muted-foreground hover:text-luxury-gold transition-colors text-sm">
-                    {item}
-                  </a>
+              {[
+                { label: "About Us", path: "/about" },
+                { label: "Residential", path: "/residential" },
+                { label: "Contact", path: "/contact" },
+                { label: "Media", path: "/media" },
+              ].map((item) => (
+                <li key={item.path}>
+                  <Link to={item.path} className="text-muted-foreground hover:text-luxury-gold transition-colors text-sm">
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -48,11 +56,15 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Our Services</h4>
             <ul className="space-y-3">
-              {["Residential", "Commercial", "Hospitality", "Infrastructure", "Property Management"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-muted-foreground hover:text-luxury-gold transition-colors text-sm">
-                    {item}
-                  </a>
+              {[
+                { label: "Residential", path: "/residential" },
+                { label: "Commercial", path: "/commercial" },
+                { label: "Hospitality", path: "/hospitality" },
+              ].map((item) => (
+                <li key={item.path}>
+                  <Link to={item.path} className="text-muted-foreground hover:text-luxury-gold transition-colors text-sm">
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
