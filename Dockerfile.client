@@ -1,0 +1,30 @@
+# Build stage
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+
+# Copy package files
+COPY package.json package-lock.json ./
+RUN npm install
+
+# Copy source code
+COPY . .
+
+# Build application
+RUN npm run build:client
+
+# Production stage
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copy only production dependencies
+COPY package.json package-lock.json ./
+RUN npm install --production
+
+# Copy built client
+COPY --from=builder /app/dist ./dist
+
+EXPOSE 8080
+
+CMD ["npm", "run", "preview"]
