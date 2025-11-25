@@ -58,10 +58,9 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Our Services</h4>
             <ul className="space-y-3">
               {[
-                { label: "Residential Spaces", path: "/residential" },
-                { label: "Office Spaces", path: "/commercial" },
-                { label: "Shopping Complex", path: "/commercial" },
-                { label: "Multiplexes", path: "/hospitality" },
+                { label: "Infrastructure Services", path: "/infrastructure-services" },
+                { label: "Registry Services", path: "/registry-services" },
+                { label: "Construction Services", path: "/construction-services" },
               ].map((item) => (
                 <li key={item.path}>
                   <Link to={item.path} className="text-muted-foreground hover:text-luxury-gold transition-colors text-sm">

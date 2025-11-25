@@ -11,6 +11,9 @@ import Commercial from "./pages/Commercial";
 import Hospitality from "./pages/Hospitality";
 import Media from "./pages/Media";
 import ProjectDetail from "./pages/ProjectDetail";
+import InfrastructureServices from "./pages/InfrastructureServices";
+import RegistryServices from "./pages/RegistryServices";
+import ConstructionServices from "./pages/ConstructionServices";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +28,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/infrastructure-services" element={<InfrastructureServices />} />
+          <Route path="/registry-services" element={<RegistryServices />} />
+          <Route path="/construction-services" element={<ConstructionServices />} />
           <Route path="/residential" element={<Residential />} />
           <Route path="/commercial" element={<Commercial />} />
           <Route path="/hospitality" element={<Hospitality />} />
