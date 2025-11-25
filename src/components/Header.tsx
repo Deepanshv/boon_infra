@@ -7,12 +7,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Residential", path: "/residential" },
-    { label: "Commercial", path: "/commercial" },
-    { label: "Hospitality", path: "/hospitality" },
+    { label: "Home", path: "/" },
+    { label: "Services", path: "/residential" },
+    { label: "Projects", path: "/residential" },
     { label: "About Us", path: "/about" },
-    { label: "Media", path: "/media" },
-    { label: "Contact", path: "/contact" },
+    { label: "Contact Us", path: "/contact" },
   ];
 
   return (
@@ -22,8 +21,8 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="text-2xl font-serif font-bold tracking-wider">
-              <span className="text-luxury-gold">LUXURY</span>
-              <span className="text-foreground"> ESTATES</span>
+              <span className="text-luxury-gold">BOON</span>
+              <span className="text-foreground"> INFRASTRUCTURE</span>
             </div>
           </Link>
 

@@ -13,15 +13,16 @@ const Contact = () => {
     name: "",
     email: "",
     phone: "",
-    interest: "",
-    message: "",
+    country: "",
+    state: "",
+    city: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
-    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
+    if (!formData.name || !formData.email || !formData.phone) {
       toast.error("Please fill in all required fields");
       return;
     }
@@ -41,24 +42,19 @@ const Contact = () => {
     }
 
     toast.success("Thank you! We'll get back to you soon.");
-    setFormData({ name: "", email: "", phone: "", interest: "", message: "" });
+    setFormData({ name: "", email: "", phone: "", country: "", state: "", city: "" });
   };
 
   const contactInfo = [
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["123 Luxury Avenue", "Premium District, Mumbai 400001"],
+      details: ["First floor Shop no-2,3 corporation market", "Naudra bridge Jabalpur (M.P)"],
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+91 12345 67890", "+91 98765 43210"],
-    },
-    {
-      icon: Mail,
-      title: "Email Us",
-      details: ["info@luxuryestates.com", "sales@luxuryestates.com"],
+      details: ["+91 99935 35333"],
     },
     {
       icon: Clock,
@@ -159,24 +155,35 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="interest">Interested In</Label>
+                  <Label htmlFor="country">Country</Label>
                   <Input
-                    id="interest"
-                    value={formData.interest}
-                    onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
-                    placeholder="e.g., Premium Gardens"
+                    id="country"
+                    value={formData.country}
+                    onChange={(e) => setFormData({ ...formData, country: e.target.value })}
+                    placeholder="India"
                     className="bg-secondary"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message *</Label>
-                  <Textarea
-                    id="message"
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Tell us more about your requirements..."
-                    className="bg-secondary min-h-[150px]"
+                  <Label htmlFor="state">State</Label>
+                  <Input
+                    id="state"
+                    value={formData.state}
+                    onChange={(e) => setFormData({ ...formData, state: e.target.value })}
+                    placeholder="Madhya Pradesh"
+                    className="bg-secondary"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="city">City</Label>
+                  <Input
+                    id="city"
+                    value={formData.city}
+                    onChange={(e) => setFormData({ ...formData, city: e.target.value })}
+                    placeholder="Jabalpur"
+                    className="bg-secondary"
                   />
                 </div>
 
@@ -185,7 +192,7 @@ const Contact = () => {
                   className="bg-luxury-gold hover:bg-luxury-gold-dark text-background w-full md:w-auto"
                   size="lg"
                 >
-                  Send Message
+                  Submit
                 </Button>
               </form>
             </div>
