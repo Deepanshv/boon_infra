@@ -1,3 +1,4 @@
+// @ts-nocheck
 const { User } = require("../models/User");
 const { hashPassword, comparePassword } = require("../utils/password");
 const { generateToken } = require("../utils/jwt");

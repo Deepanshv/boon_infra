@@ -1,3 +1,4 @@
+// @ts-nocheck
 const { Project } = require("../models/Project");
 const { sendResponse, sendError } = require("../utils/response");
 

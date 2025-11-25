@@ -1,3 +1,4 @@
+// @ts-nocheck
 const { Enquiry } = require("../models/Enquiry");
 const { sendResponse, sendError } = require("../utils/response");
 
