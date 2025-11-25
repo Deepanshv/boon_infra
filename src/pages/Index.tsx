@@ -16,23 +16,23 @@ const Index = () => {
 
   const heroSlides = [
     {
-      title: "Premium Gardens",
-      subtitle: "LUXURY LIVING",
-      description: "Neo-classical architectural marvel located amid the serenity of nature, offering you an experience of the lifetime.",
+      title: "First Light Homes",
+      subtitle: "We turn your dream 'Utopia' into Reality!!!",
+      description: "We are the most illustrious and renowned real estate developers from Jabalpur (M.P). Our vision is of fulfilling lives with unparalleled luxury and excel with unmatched customer satisfaction.",
       imagePath: hero1,
       link: "#",
     },
     {
-      title: "Executive Estate",
-      subtitle: "MODERN TOWNSHIP",
-      description: "Winner of the best design for community living award, the largest township gives you all the amenities in one place.",
+      title: "Boon Infrastructure",
+      subtitle: "A symbol of Sublime Grandeur",
+      description: "We are passionate of creating landmarks with divine grandeur and building a legacy of unrivalled inimitable infrastructure.",
       imagePath: hero2,
       link: "#",
     },
     {
-      title: "Riverside Enclave",
-      subtitle: "WATERFRONT LIVING",
-      description: "Located in the vicinity of pristine river, this enclave emulates the character and persona of luxury living.",
+      title: "Quality & Excellence",
+      subtitle: "EXCEPTIONAL DELIVERANCE",
+      description: "Our projects are built with precision and passion with the insight that every project carries our name and legacy forward.",
       imagePath: hero3,
       link: "#",
     },
@@ -82,53 +82,53 @@ const Index = () => {
 
       {/* Property Showcases */}
       <PropertyShowcase
-        title="Premium Gardens"
-        location="Prime Location"
-        description="Experience luxury redefined with our flagship residential project. A perfect blend of modern architecture and natural serenity, offering world-class amenities and spacious living spaces."
+        title="First Light Homes"
+        location="Jabalpur (M.P)"
+        description="Our flagship project featuring luxury homes with exceptional quality deliverance. We build with precision and passion, ensuring every detail reflects our commitment to excellence."
         features={[
-          "2, 3 & 4 BHK luxury residences",
-          "Landscaped gardens spanning 5 acres",
-          "State-of-the-art clubhouse with premium amenities",
-          "24/7 security with gated community",
-          "Premium Italian marble flooring",
+          "Exceptional quality deliverance",
+          "Timely deliverance guaranteed",
+          "Round the clock loan support",
+          "Unsurpassable customer support",
+          "Premium construction and finishing",
         ]}
         imagePath={property1}
-        projectId="premium-gardens"
+        projectId="first-light-homes"
       />
 
       <div className="h-px bg-border container mx-auto" />
 
       <PropertyShowcase
-        title="Executive Estate"
-        location="Metropolitan Hub"
-        description="An integrated township that sets new standards in community living. With world-class infrastructure and contemporary design, it's where luxury meets convenience."
+        title="Residential & Office Spaces"
+        location="Jabalpur (M.P)"
+        description="We have a vibrant portfolio of projects spanning from iconic luxury homes, residential & office spaces. Every project begins from scratch - we procure land and turn your vision into reality."
         features={[
-          "Over 2000 premium residences",
-          "Shopping complex and entertainment zone",
-          "International schools and medical facilities",
-          "Sports complex with Olympic-size pool",
-          "Sustainable green building design",
+          "Luxury residential homes",
+          "Modern office spaces",
+          "Shopping complex facilities",
+          "Multiplexes and entertainment zones",
+          "Customized planning and execution",
         ]}
         imagePath={property2}
-        projectId="executive-estate"
+        projectId="residential-office"
         reverse
       />
 
       <div className="h-px bg-border container mx-auto" />
 
       <PropertyShowcase
-        title="Riverside Enclave"
-        location="Waterfront District"
-        description="Wake up to breathtaking views of serene waters. This exclusive enclave offers a perfect retreat from the city's hustle, without compromising on luxury and connectivity."
+        title="Our Commitment"
+        location="Jabalpur (M.P)"
+        description="We believe in creating our legacy from scratch each time. Customer satisfaction is of paramount importance to us, hence each project is customly tailored and planned efficiently to be delivered in the desired timeline."
         features={[
-          "Exclusive waterfront apartments",
-          "Private balconies with panoramic views",
-          "Riverside promenade and walking trails",
-          "Premium imported fixtures and fittings",
-          "Smart home automation systems",
+          "Land procurement to project completion",
+          "Timely delivery assured",
+          "24/7 customer support",
+          "Complete loan assistance",
+          "Quality assurance at every step",
         ]}
         imagePath={property3}
-        projectId="riverside-enclave"
+        projectId="our-commitment"
       />
 
       <Footer />

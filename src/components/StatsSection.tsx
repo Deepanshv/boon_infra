@@ -1,9 +1,9 @@
 const StatsSection = () => {
   const stats = [
-    { number: "30+", label: "Years of Excellence" },
-    { number: "50+", label: "Luxury Projects" },
-    { number: "10,000+", label: "Happy Families" },
-    { number: "100+", label: "Awards Won" },
+    { number: "100%", label: "Quality Deliverance" },
+    { number: "24/7", label: "Loan Support" },
+    { number: "100%", label: "Timely Delivery" },
+    { number: "24/7", label: "Customer Support" },
   ];
 
   return (

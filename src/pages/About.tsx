@@ -5,17 +5,17 @@ import { Button } from "@/components/ui/button";
 
 const About = () => {
   const milestones = [
-    { year: "1990", title: "Company Founded", description: "Started with a vision to redefine luxury real estate" },
-    { year: "2000", title: "First Township", description: "Launched our first integrated township project" },
-    { year: "2010", title: "International Recognition", description: "Received multiple international awards" },
-    { year: "2024", title: "Industry Leader", description: "Completed 100+ projects with 50,000+ happy families" },
+    { year: "Founded", title: "Boon Infrastructure", description: "Started with a vision to redefine luxury real estate in Jabalpur" },
+    { year: "Growth", title: "Fastest Growing Developer", description: "Became one of the most illustrious and renowned real estate developers in M.P" },
+    { year: "Innovation", title: "First Light Homes", description: "Launched our flagship project with exceptional quality deliverance" },
+    { year: "Present", title: "Industry Leader", description: "Building a legacy of unrivalled inimitable infrastructure" },
   ];
 
   const values = [
-    { icon: Target, title: "Excellence", description: "Committed to delivering world-class quality" },
-    { icon: Users, title: "Customer First", description: "Your satisfaction is our top priority" },
-    { icon: Building2, title: "Innovation", description: "Pioneering new standards in construction" },
-    { icon: Award, title: "Integrity", description: "Building trust through transparency" },
+    { icon: Award, title: "Exceptional Quality", description: "Our projects are built with precision and passion with the insight that every project carries our name and legacy forward" },
+    { icon: Target, title: "Timely Deliverance", description: "Customer satisfaction is of paramount importance to us. Each project is customly tailored and planned efficiently to be delivered in the desired timeline" },
+    { icon: Building2, title: "Round the Clock Loan Support", description: "We understand the needs and wants of customers, hence we provide round the clock guidance of all kinds of loan facilities" },
+    { icon: Users, title: "Unsurpassable Customer Support", description: "We listen and respond to all the customer queries. Our executives adhere towards fulfilling all your dreams" },
   ];
 
   return (
@@ -30,7 +30,7 @@ const About = () => {
               About <span className="text-luxury-gold">Us</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Creating architectural masterpieces and luxury living spaces for over three decades
+              A symbol of Sublime Grandeur - Building a legacy of unrivalled inimitable infrastructure in Jabalpur (M.P)
             </p>
           </div>
         </div>
@@ -45,14 +45,15 @@ const About = () => {
                 Our <span className="text-luxury-gold">Story</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                For over three decades, we have been at the forefront of creating luxury living spaces 
-                that blend contemporary design with timeless elegance. Our commitment to excellence 
-                has made us one of the most trusted names in real estate.
+                We are exemplary and fastest growing infrastructure developers from Jabalpur (M.P). 
+                We have vibrant portfolio of projects spanning from iconic luxury homes, residential & 
+                office spaces, multiplexes, shopping complex etc.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                From residential townships to commercial complexes and hospitality ventures, we have 
-                successfully delivered projects that have redefined urban living. Our focus on quality, 
-                innovation, and customer satisfaction continues to drive us forward.
+                We believe in creating our legacy from scratch each time hence we begin every project 
+                by firstly procuring land and then turning customers vision into reality! We are 
+                passionate of creating landmarks with divine grandeur and building a legacy of 
+                unrivalled inimitable infrastructure.
               </p>
               <Button className="bg-luxury-gold hover:bg-luxury-gold-dark text-background mt-4">
                 View Our Projects
@@ -95,6 +96,32 @@ const About = () => {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Section */}
+      <section className="py-24 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-serif font-bold mb-4">
+              Meet Our <span className="text-luxury-gold">Founder</span>
+            </h2>
+          </div>
+          <div className="max-w-2xl mx-auto text-center">
+            <div className="mb-8">
+              <div className="w-32 h-32 mx-auto bg-luxury-gold/10 rounded-full flex items-center justify-center mb-6">
+                <Users className="w-16 h-16 text-luxury-gold" />
+              </div>
+              <h3 className="text-3xl font-serif font-bold mb-2">Afzal Khan</h3>
+              <p className="text-luxury-gold text-lg mb-4">Founder & CEO</p>
+              <p className="text-muted-foreground leading-relaxed">
+                Leading Boon Infrastructure with a vision to create architectural masterpieces and 
+                turn every customer's dream into reality. With unwavering commitment to quality and 
+                customer satisfaction, Afzal Khan has established Boon Infrastructure as a trusted 
+                name in Jabalpur's real estate landscape.
+              </p>
+            </div>
           </div>
         </div>
       </section>
