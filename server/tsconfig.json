@@ -14,8 +14,13 @@
     "noImplicitAny": false,
     "noEmitOnError": false,
     "noImplicitThis": false,
-    "isolatedModules": true,
-    "allowJs": true
+    "isolatedModules": false,
+    "allowJs": true,
+    "skipDefaultLibCheck": true,
+    "declaration": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
