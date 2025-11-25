@@ -21,7 +21,7 @@ const createEnquiry = async (req, res) => {
   }
 };
 
-export const getAllEnquiries = async (req, res) => {
+const getAllEnquiries = async (req, res) => {
   try {
     const enquiries = await Enquiry.find().sort({ createdAt: -1 });
     sendResponse(res, 200, "Enquiries fetched successfully", enquiries);
@@ -30,7 +30,7 @@ export const getAllEnquiries = async (req, res) => {
   }
 };
 
-export const getEnquiryById = async (req, res) => {
+const getEnquiryById = async (req, res) => {
   try {
     const enquiry = await Enquiry.findById(req.params.id);
     if (!enquiry) {
@@ -43,7 +43,7 @@ export const getEnquiryById = async (req, res) => {
   }
 };
 
-export const updateEnquiry = async (req, res) => {
+const updateEnquiry = async (req, res) => {
   try {
     const enquiry = await Enquiry.findByIdAndUpdate(req.params.id, req.body, {
       new: true,

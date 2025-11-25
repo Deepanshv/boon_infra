@@ -41,7 +41,7 @@ const register = async (req, res) => {
   }
 };
 
-export const login = async (req, res) => {
+const login = async (req, res) => {
   try {
     const { email, password } = req.body;
 
@@ -72,7 +72,7 @@ export const login = async (req, res) => {
   }
 };
 
-export const getProfile = async (req, res) => {
+const getProfile = async (req, res) => {
   try {
     const user = await User.findById(req.userId);
     if (!user) {
